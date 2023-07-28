@@ -1,0 +1,93 @@
+body, html {
+    margin: 0;
+    padding: 0;
+}
+
+.hero-section {
+  border: blue solid 2px;
+    position: relative;
+    width: 100%;
+    height: 480px;
+    overflow: hidden;
+}
+.hero-image {
+    position: absolute;
+    bottom: -60px;
+    left: 0;
+    width: 100%;
+    /* 60px to compensate for the 60px bottom margin */
+    height: calc(100% + 60px); 
+}
+picture, img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Min Mobile (Smartphones) - 320px and larger */
+@media (min-width: 320px) {
+  /* Your styles for Mobile and larger */
+}
+
+/* Min Small Screens (Small Tablets and Landscape Orientation) - 481px and larger */
+@media (min-width: 481px) {
+  /* Your styles for Small Screens and larger */
+}
+
+/* Min Tablet - 768px and larger */
+@media (min-width: 768px) {
+  /* Your styles for Tablet and larger */
+}
+
+/* Min Laptop - 1024px and larger */
+@media (min-width: 1024px) {
+  /* Your styles for Laptop and larger */
+}
+
+/* Min Desktop - 1280px and larger */
+@media (min-width: 1280px) {
+  /* Your styles for Desktop and larger */
+}
+/* Min Large Screen - 1900px and larger */
+@media (min-width: 1900px) {
+  /* Your styles for Large Screen and larger */
+}
+/* Min 4K Monitor (3840px) */
+@media (min-width: 3840px) {
+  /* Your styles for 4K monitors and larger */
+}
+
+/* MAX Queries */
+/* Max Mobile (Smartphones) - 767px and smaller */
+@media (max-width: 767px) {
+  /* Your styles for Mobile and smaller */
+}
+
+/* Max Small Screens (Small Tablets and Landscape Orientation) - 480px and smaller */
+@media (max-width: 480px) {
+  /* Your styles for Small Screens and smaller */
+}
+
+/* Max Tablet - 767px and smaller */
+@media (max-width: 767px) {
+  /* Your styles for Tablet and smaller */
+}
+
+/* Max Laptop - 1023px and smaller */
+@media (max-width: 1023px) {
+  /* Your styles for Laptop and smaller */
+}
+
+/* Max Desktop - 1279px and smaller */
+@media (max-width: 1279px) {
+  /* Your styles for Desktop and smaller */
+}
+
+/* Max Large Screen - 1899px and smaller */
+@media (max-width: 1899px) {
+  /* Your styles for Large Screen and smaller */
+}
+/* Max 4K Monitor (4095px) */
+@media (max-width: 4095px) {
+  /* Your styles for 4K monitors and smaller */
+}

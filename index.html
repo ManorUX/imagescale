@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hero Section</title>
+  <link rel="stylesheet" href="styles.css">  
+</head>
+
+<body>
+  <div class="hero-section">
+    <div class="hero-image">
+      <picture>
+        <!-- Small screen image -->
+        <source media="(max-width: 640px)" srcset="/375-480.png">
+        <!-- <source media="(max-width: 480px)" srcset="/375-480.png">
+        -->
+        <!-- Medium screen image -->
+        <!--
+        <source media="(min-width: 481px) and (max-width: 640px)" srcset="/481-640.png">
+        -->
+        <!-- Large screen image -->
+        <source media="(min-width: 641px) and (max-width: 960px)" srcset="/641-960.png">
+        <!-- Extra-large screen image -->
+        <source media="(min-width: 961px) and (max-width: 1400px)" srcset="/961-1440.png">
+        <!-- HD screen image -->
+        <source media="(min-width: 1401px) and (max-width: 1900px)" srcset="/1441-1900.png">
+        <!-- 2k screen image -->
+        <source media="(min-width: 1901px) and (max-width: 2560px)" srcset="/1901-2560.png">
+        <!-- 2k+ screen image -->
+        <source media="(min-width: 2561px) and (max-width: 3840px)" srcset="/2561-3840.png">
+        <!-- Fallback image for browsers that do not support the <picture> element -->
+        <img src="https://raw.githubusercontent.com/ManorUX/imagescale/main/1440-2000.png" alt="Hero Image">
+    </picture>
+    
+    
+    </div>
+  </div>
+  <p id="dimensions">Width: <span id="width"></span> | Height: <span id="height"></span></p>
+
+  <script>
+    function updateDimensions() {
+        const width = window.innerWidth;
+        const height = window.innerHeight;
+
+        // Update the HTML content with the dimensions
+        document.getElementById("width").textContent = width;
+        document.getElementById("height").textContent = height;
+    }
+
+    // Initial update when the page loads
+    updateDimensions();
+
+    // Add a resize event listener to update the dimensions when the window is resized
+    window.addEventListener('resize', updateDimensions);
+</script>
+  
+</body>
+
+</html>
